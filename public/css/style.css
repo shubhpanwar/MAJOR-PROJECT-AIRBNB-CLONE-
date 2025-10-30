@@ -1,0 +1,120 @@
+body {
+   font-family: "sPlus Jakarta Sans", sans-serif !important;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+ .container{
+    flex: 1;
+ }
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.nav-link {
+    color: #000000 !important;
+    font-size: 18px;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* footer */
+.f-info-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.f-info-links a:hover {
+    color: #fe424d !important;
+}
+.f-info{
+    min-height: 140px;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;   /* stack in 3 different lines */
+    align-items: center;      /* center horizontally */
+    justify-content: center;  /* center vertically within the footer */
+    gap: 10px;                /* space between the three rows */
+    padding: 16px;
+    text-align: center;
+}
+
+/* Ensure each row content is centered perfectly */
+.f-info > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+/* cards */
+.card {
+    border: none !important;
+    margin-bottom: 20px;
+    overflow: hidden; /* keep stretched-link contained */
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+    position: relative; /* anchor positioning context for stretched-link */
+}
+
+.card-text {
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    color: #000000 !important;
+}
+
+/* prevent anchors from turning blocks into inline layout changes */
+.card a {
+    display: inline;
+}
+
+/* Card Effect */
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.4;
+    background-color: #ebebeb;
+}
+
+/* New page */
+
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* Edit Page */
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* show page */
+
+.show-img{
+    height: 30vh;
+}
